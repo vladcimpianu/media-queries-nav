@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Navbar</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        html,
+        body,
+        div,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+        
+        .nav {
+            background: #000;
+            height: 50px;
+            width: auto;
+            border-radius: 0 8px;
+        }
+        
+        .nav li {
+            display: inline-block;
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 40px;
+        }
+        
+        .nav li:hover {
+            background: royalblue;
+            transition: background .5s;
+        }
+        
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        @media (min-width: 1281px) {
+            .nav {
+                background-color: slategray;
+            }
+        }
+        
+        @media (min-width: 1025px) and (max-width: 1280px) {
+            .nav {
+                background-color: tan;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .nav {
+                background-color: tomato;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            .nav {
+                background-color: thistle;
+            }
+        }
+        
+        @media (min-width: 481px) and (max-width: 767px) {
+            .nav {
+                background-color: violet;
+            }
+            .nav li {
+                display: list-item;
+            }
+        }
+        
+        // 320 480
+        @media (min-width: 320px) and (max-width: 480px) {
+            .nav {
+                background-color: whitesmoke;
+            }
+            .nav li {
+                display: list-item;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Take Action!</a></li>
+            <li><a href="#" class="nav-link">FAQ</a></li>
+            <li><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+    </div>
+
+</body>
+
+
+</html>
