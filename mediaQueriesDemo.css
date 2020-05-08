@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+}
+
+html,
+body,
+div,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.nav {
+    background: #000;
+    width: auto;
+    border-radius: 0 8px;
+    position: relative;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+    height: auto;
+    line-height: 50px;
+    padding: 0 40px;
+    position: relative;
+    box-shadow: border-box;
+}
+
+.nav li:hover {
+    background: royalblue;
+    transition: background .5s;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (min-width: 1281px) {
+    .nav {
+        background-color: slategray;
+        height: auto;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .nav {
+        background-color: tan;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav {
+        background-color: tomato;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .nav {
+        background-color: thistle;
+        height: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .nav {
+        background-color: violet;
+        height: auto;
+    }
+    .nav li {
+        display: list-item;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav {
+        background-color: darksalmon;
+        height: auto;
+    }
+    .nav li {
+        display: flexbox;
+    }
+}
+
+@media (max-width: 319px) {
+    .nav {
+        background-color: darksalmon;
+        height: auto;
+    }
+}
